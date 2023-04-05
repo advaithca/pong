@@ -26,12 +26,14 @@ while running:
     pygame.draw.circle(screen, "white", ball_pos, 20)
     pygame.draw.rect(screen, "white", player_a)
     pygame.draw.rect(screen, "white", player_b)
-    pygame.draw.rect(screen, "white", (635, 0, 10, 720))
-    
+    k = 0
+    for i in range(0, 72):
+        pygame.draw.rect(screen, "white", (635, k+5, 10, 10))
+        k += 15
     keys = pygame.key.get_pressed()
 
     if keys[pygame.K_w]:
-        if player_b[1] > 60:
+        if player_b[1] > 40:
             player_b[1] -= 300 * dt
         else:
             player_b[1] = player_b[1]
