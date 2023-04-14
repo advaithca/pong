@@ -20,7 +20,6 @@ while running:
 
     screen.fill("black")
 
-    
     player_a[1] = ball_pos.y - 50
     
     pygame.draw.circle(screen, "white", ball_pos, 20)
@@ -66,7 +65,7 @@ while running:
         if ball_pos.x < 1240:
             ball_pos.x += 300 * dt
         else:
-            if ball_pos.y < player_b[1] + player_b[3] and ball_pos.y > player_b[1]:
+            if player_b[1] + player_b[3] > ball_pos.y > player_b[1]:
                 ball_pos.x = ball_pos.x
                 x_dir = 0
                 continue
