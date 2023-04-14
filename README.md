@@ -1,5 +1,5 @@
 # pong
-pong game in pygame because why not. Made it because I was bored.
+pong game in pygame because why not. You can call it Lazy Pong.
 
 
 No Score count because opponent is unbeatable, and you can't be beat either. 
